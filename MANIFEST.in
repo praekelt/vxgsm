@@ -1,0 +1,4 @@
+include config/gsm.yaml
+include *.rst
+exclude *.egg-info/*
+recursive-include vxgsm
