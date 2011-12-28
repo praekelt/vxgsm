@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-
+g
 
 def listify(filename):
     return filter(None, open(filename, 'r').read().split('\n'))
@@ -10,7 +10,7 @@ def remove_externals(requirements):
 
 setup(
     name="vxgsm",
-    version="0.3.0a",
+    version="0.1.0",
     url='http://github.com/praekelt/vxgsm',
     license='BSD',
     description="Gammu based GSM Transport for Vumi",
