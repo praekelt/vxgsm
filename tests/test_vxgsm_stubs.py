@@ -1,7 +1,7 @@
-import gammu
-from vumi.transports.gsm import GSMTransport
-from vumi.tests.utils import FakeRedis
 from twisted.python import log
+from vumi.tests.utils import FakeRedis
+from vxgsm.transports import GSMTransport
+import gammu
 
 
 class FakeGammuPhone(object):

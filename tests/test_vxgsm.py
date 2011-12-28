@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from twisted.internet.defer import inlineCallbacks
 from vumi.message import TransportUserMessage
-from vumi.transports.gsm.tests.test_gsm_stubs import (
-    FakeGSMTransport, FakeGammuPhone, FailingFakeGammuPhone)
 from vumi.transports.tests.test_base import TransportTestCase
 from vumi.transports.failures import FailureMessage
+from vxgsm.tests.test_vxgsm_stubs import (
+    FakeGSMTransport, FakeGammuPhone, FailingFakeGammuPhone)
 from datetime import datetime
 
 
