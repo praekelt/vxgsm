@@ -1,0 +1,6 @@
+transport_name: gsm_transport
+url: http://your.domain.local/
+username: 'optional-username'
+password: 'optional-password'
+http_method: 'POST'
+auth_method: 'basic'
