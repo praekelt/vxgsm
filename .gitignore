@@ -2,3 +2,5 @@
 *.pyc
 /_trial_temp/
 *.egg-info/
+/tmp/
+/logs/
