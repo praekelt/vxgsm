@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-g
+
 
 def listify(filename):
     return filter(None, open(filename, 'r').read().split('\n'))
