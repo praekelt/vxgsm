@@ -7,7 +7,7 @@ from twisted.internet import reactor
 from twisted.python import log
 from twisted.python.failure import Failure
 from vumi.transports.base import Transport
-from vumi.utils import get_deploy_int, normalize_msisdn
+from vumi.utils import normalize_msisdn
 from vumi.message import TransportUserMessage
 from uuid import uuid4
 import gammu
@@ -129,9 +129,8 @@ class GSMTransport(Transport):
     @inlineCallbacks
     def setup_transport(self):
         log.msg('Setting up transport')
-        dbindex = get_deploy_int(self._amqp_client.vhost)
         redis_config = self.config.get('redis', {})
-        self.r_server = yield redis.Redis(db=dbindex, **redis_config)
+        self.r_server = yield redis.Redis(**redis_config)
         self.r_prefix = "%(transport_name)s" % self.config
         self.start_polling()
 
